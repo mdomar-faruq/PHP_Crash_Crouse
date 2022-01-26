@@ -1,0 +1,51 @@
+
+----win help cd----
+back (cd..)
+forward (cd foldername)
+
+
+----------\-------
+name=back salas (\)
+
+-------end -------
+PHP 8 Development Server->
+php -S localhost:8000
+
+
+*How to host apache virtual host ?
+-------HOST-------
+1.
+Open ->  httpd-vhosts.conf ( C:\xampp\apache\conf\extra)
+
+2.
+ DocumentRoot "Project Location Index "
+ ServerName example.com
+Write code
+
+example-> 
+
+<VirtualHost *:80>
+  
+    DocumentRoot "C:\xampp\htdocs\PHP\MVC\public" 
+    ServerName Products.test
+
+    <Directory "C:\xampp\htdocs\PHP\MVC\public">
+    RewriteEngine On
+    RewriteCond %{REQUESTZ_FILENAME} !-f
+    RewriteCond %{REQUESTZ_FILENAME} !-d
+    RewriteRule . index.php [L]
+    </Directory>
+
+</VirtualHost>
+
+3.
+open -> hosts (C:\Windows\System32\drivers\etc)
+
+write code dawon
+example->
+        127.0.0.1         products.test
+
+4.
+xampp-control.exe apache restart
+
+------End Host------

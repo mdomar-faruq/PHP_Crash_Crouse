@@ -1,0 +1,15 @@
+{
+    "name": "vendor/test",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "MD Omar Faruq",
+            "email": "razume2@gmail.com"
+        }
+    ],
+    "require": {}
+}

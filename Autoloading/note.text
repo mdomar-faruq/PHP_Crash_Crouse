@@ -1,0 +1,19 @@
+composer init
+if face error-> create custome composer  
+like->
+{
+    "name": "vendor/name",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    },
+    "authors": [
+        {
+            "name": "example_name",
+            "email": "example@gmail.com"
+        }
+    ],
+    "require": {
+    }
+}
